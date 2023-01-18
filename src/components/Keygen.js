@@ -1,24 +1,21 @@
+import styles from './Keygen.module.css'
 import React, { useState } from 'react';
 
 function randomizer(size, uppercase, lowercase, special, numbers) {
     let characters = '';
-    if(uppercase==true)
-    {
+    if (uppercase == true) {
         characters += 'ABCDEFGHIJKLMNOPQRSTUVXWYZ';
     }
-    if(lowercase==true)
-    {
+    if (lowercase == true) {
         characters += 'abcdefghijklmnopqrstuvxwyz';
     }
-    if(numbers==true)
-    {
+    if (numbers == true) {
         characters += '0123456789';
     }
-    if(special==true)
-    {
+    if (special == true) {
         characters += '!@#$%&*()_;.,?:{^}[~]';
     }
-    
+
 
     // const characters = "ABCDEFGHIJKLMNOPQRSTUVXWYZ0123456789!@#$%&*()_;.,?:{^}[~]";
     let result = "";
@@ -39,9 +36,10 @@ function Keygen() {
     return (
         <>
 
-            <input type="text" value={result} />
-            <button onClick={() => setResult(randomizer(size, uppercase, lowercase, special, numbers))}>Generate new pass</button>
-
+            <div>
+                <input className={styles.result} type="text" value={result} />
+                <button className={styles.generateButton} onClick={() => setResult(randomizer(size, uppercase, lowercase, special, numbers))}>Generate new pass</button>
+            </div>
             <div>
                 <h3>Options</h3>
                 <div>
