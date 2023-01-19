@@ -8,7 +8,7 @@ I'm studying React and this is one of my projects I use to practice, I just like
 It was the first project I've entirely written in the GitHub Codespaces!
 
 ## Where can I test it?
-You can clone this repo and test it for yourself, or just wait for me to publish it on Vercel under a domain.
+You can clone this repo and test it for yourself, or use [this official page on Vercel](https://open-passwd.vercel.app/).
 
 ## Roadmap
 I want to recreate my [PHP Keygen-Package](https://github.com/kaiopiola/keygen-package) as a NPM package on future, and I'll implement it on this project.
