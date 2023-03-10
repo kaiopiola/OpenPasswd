@@ -11,4 +11,9 @@ It was the first project I've entirely written in the GitHub Codespaces!
 You can clone this repo and test it for yourself, or use [this official page on Vercel](https://open-passwd.vercel.app/).
 
 ## Roadmap
-I want to recreate my [PHP Keygen-Package](https://github.com/kaiopiola/keygen-package) as a NPM package on future, and I'll implement it on this project.
+~~I want to recreate my [PHP Keygen-Package](https://github.com/kaiopiola/keygen-package) as a NPM package on future, and I'll implement it on this project.~~
+
+I already started the JS version of the project above and I'm updating this repo to use it, so check it out [here](https://github.com/kaiopiola/keygen-js).
+
+Intentions:
+- Create an web API to let you use this project online without needing installation or implementation
