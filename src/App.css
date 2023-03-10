@@ -29,3 +29,43 @@
 .small {
   font-size: 0.75rem;
 }
+
+.subtitle {
+  font-size: 15px;
+  height: 1.5rem;
+  margin: 0;
+}
+
+.subtitle a {
+  color: #61dafb;
+}
+
+.star {
+  font-size: 15px;
+  height: 1.5rem;
+  margin: 0;
+}
+
+.star a {
+  color: #FFFFFF;
+}
+
+h1 {
+  height:3rem;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.by {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  font-size: 10px;
+}
+
+.by a {
+  color: #FFFFFF;
+  text-decoration: none;
+}

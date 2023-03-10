@@ -1,5 +1,6 @@
 import styles from './Keygen.module.css'
 import React, { useState } from 'react';
+import {default as Key} from 'keygen-package';
 
 function randomizer(size, uppercase, lowercase, special, numbers) {
     let characters = '';
@@ -18,10 +19,13 @@ function randomizer(size, uppercase, lowercase, special, numbers) {
 
 
     // const characters = "ABCDEFGHIJKLMNOPQRSTUVXWYZ0123456789!@#$%&*()_;.,?:{^}[~]";
-    let result = "";
-    for (var i = 0; i < size; i++) {
-        result += characters.charAt(Math.floor(Math.random() * characters.length));
-    }
+    
+    let result = ""
+    let newkey = new Key
+    newkey.pattern = "X".repeat(size)
+    newkey.letters = characters
+    newkey.numbers = ''
+    result = newkey.generate()
     return result;
 }
 
